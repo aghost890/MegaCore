@@ -1,0 +1,42 @@
+prefix: "&8[&bMega&8] &7"
+welcome: "&aاهلاً بك &f%player% &aفي السيرفر!"
+join-message: "&a+ &f%player%"
+quit-message: "&c- &f%player%"
+
+max-homes: 3
+rtp-radius: 5000
+tpa-timeout-seconds: 60
+
+economy:
+  starting-balance: 1000
+  symbol: "$"
+
+kits:
+  starter:
+    cooldown: 86400
+    items:
+      - STONE_SWORD:1
+      - STONE_PICKAXE:1
+      - COOKED_BEEF:16
+  vip:
+    cooldown: 43200
+    items:
+      - DIAMOND_SWORD:1
+      - GOLDEN_APPLE:8
+      - EXPERIENCE_BOTTLE:32
+
+upgrades:
+  break-planks: true
+  insta:
+    book-name: "&6كتاب الكسر السريع"
+    book-lore:
+      - "&7اسحبه على أي فأس لتطويرها"
+      - "&7يكسر الخشب بضربة وحدة"
+    axe-lore-line: "&6✦ كسر سريع للخشب"
+  area:
+    book-name: "&6كتاب الـ 3x3"
+    book-lore:
+      - "&7اسحبه على أي فأس لتطويرها"
+      - "&7يكسر الخشب 3x3 (Shift = بلوك واحد)"
+    axe-lore-line: "&6✦ كسر 3x3 للخشب"
+    damage-per-extra-block: 1
