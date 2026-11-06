@@ -1,0 +1,21 @@
+name: Build
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Arrange files
+        run: |
+          mkdir -p src/main/java/me/server/megacore src/main/resources
+          mv MegaCore.java src/main/java/me/server/megacore/
+          mv plugin.yml config.yml src/main/resources/
+      - run: mvn -B package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MegaCore
+          path: target/MegaCore-1.0.0.jar
