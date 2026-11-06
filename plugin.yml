@@ -1,0 +1,85 @@
+name: MegaCore
+version: 1.0.0
+main: me.server.megacore.MegaCore
+api-version: '1.21'
+author: You
+description: Essentials plugin
+
+commands:
+  spawn:
+    description: Teleport to spawn
+  setspawn:
+    description: Set the spawn point
+    permission: megacore.admin
+  home:
+    description: Teleport to a home
+    usage: /home [name]
+  sethome:
+    description: Set a home
+    usage: /sethome [name]
+  delhome:
+    description: Delete a home
+    usage: /delhome <name>
+  homes:
+    description: List your homes
+  warp:
+    description: Teleport to a warp
+    usage: /warp <name>
+  setwarp:
+    description: Create a warp
+    usage: /setwarp <name>
+    permission: megacore.admin
+  delwarp:
+    description: Delete a warp
+    usage: /delwarp <name>
+    permission: megacore.admin
+  warps:
+    description: List warps
+  tpa:
+    description: Request to teleport to a player
+    usage: /tpa <player>
+  tpaccept:
+    description: Accept a teleport request
+  tpdeny:
+    description: Deny a teleport request
+  back:
+    description: Return to your previous location
+  rtp:
+    description: Random teleport
+  heal:
+    description: Heal
+    permission: megacore.admin
+  feed:
+    description: Feed
+    permission: megacore.admin
+  fly:
+    description: Toggle flight
+    permission: megacore.admin
+  gm:
+    description: Change gamemode
+    usage: /gm <0|1|2|3> [player]
+    permission: megacore.admin
+  woodbook:
+    description: Get the Lumber enchant book
+    usage: /woodbook <insta|area> [player]
+    permission: megacore.admin
+  kit:
+    description: Claim a kit
+    usage: /kit <name>
+  kits:
+    description: List kits
+  balance:
+    description: Show balance
+    aliases: [bal, money]
+  pay:
+    description: Pay another player
+    usage: /pay <player> <amount>
+  eco:
+    description: Manage balances
+    usage: /eco <give|take|set> <player> <amount>
+    permission: megacore.admin
+
+permissions:
+  megacore.admin:
+    description: Admin commands
+    default: op
